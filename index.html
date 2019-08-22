@@ -57,6 +57,19 @@
         // ipcRenderer.send('delete',text)
         console.log(text)
     }
+    ipcRenderer.on('saved',(event,res)=>{
+        if(res=='success'){
+            console.log('note saved successfully')
+            textarea.style.backgroundColor = "#b2ff99"
+        }else {
+            console.log('error saving text')
+            textarea.style.backgroundColor="#ff8989"
+        }
+        setTimeout(()=>{
+            textarea.style.backgroundColor = ""
+        },1000)
+
+    })
 </script>
 </body>
 
