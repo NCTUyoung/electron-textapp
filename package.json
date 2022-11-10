@@ -9,6 +9,6 @@
   "author": "jimmyyoung1995@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "electron": "^6.0.2"
+    "electron": "^18.3.7"
   }
 }
